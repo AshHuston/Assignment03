@@ -5,7 +5,7 @@
  * Due Date: 01/30/2018
  * Description: This method is used to determine if a number of type BigInteger is prime or not.
  */
-package hustonas_Assignment03;
+package bigIntPrime;
 
 import java.math.BigInteger;
 
@@ -23,10 +23,10 @@ public class bigIntPrime {
 		BigInteger zero = new BigInteger("0");
 	
 		//Execptions
-		if (num.equals(one)){System.out.println("23");return false;}
-		if (num.equals(two)){System.out.println("24");return true;}
+		if (num.equals(one)){return false;}
+		if (num.equals(two)){return true;}
 		//Eliminates even numbers
-		if ((num.mod(two)).compareTo(zero)==0){System.out.println("25");return false;}
+		if ((num.mod(two)).compareTo(zero)==0){return false;}
 		
 		/*This loop checks each odd number from 3 upward until it finds one that evenly 
 		 * divides the test number. It will return false if it finds one and it will 
@@ -34,6 +34,7 @@ public class bigIntPrime {
 		 */
 		
 		for (BigInteger i = new BigInteger("3"); num.compareTo(i)>=0; i = i.add(two)){
+			if (num.equals(i)){return true;}
 			if ((num.mod(i)).compareTo(zero)==0){return false;}
 			if (((num.add(one)).mod(two)).compareTo(i)==0){return true;}
 		}
