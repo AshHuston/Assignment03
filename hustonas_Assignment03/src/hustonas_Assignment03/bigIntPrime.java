@@ -34,7 +34,7 @@ public class bigIntPrime {
 		 */
 		
 		for (BigInteger i = new BigInteger("3"); num.compareTo(i)>=0; i = i.add(two)){
-			if ((num.mod(i)).compareTo(zero)==0){System.out.println(i);return false;}
+			if ((num.mod(i)).compareTo(zero)==0){return false;}
 			if (((num.add(one)).mod(two)).compareTo(i)==0){return true;}
 		}
 		return true;
