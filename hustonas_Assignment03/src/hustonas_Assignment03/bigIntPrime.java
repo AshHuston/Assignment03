@@ -18,9 +18,6 @@ public class bigIntPrime {
 	 */
 	public static boolean isPrime(BigInteger num){
 		//Declare and istantiate objects to use with the method
-		//BigInteger seven = new BigInteger("7");
-		//BigInteger five = new BigInteger("5");
-		//BigInteger three = new BigInteger("3");
 		BigInteger two = new BigInteger("2");
 		BigInteger one = new BigInteger("1");
 		BigInteger zero = new BigInteger("0");
@@ -35,6 +32,7 @@ public class bigIntPrime {
 		 * divides the test number. It will return false if it finds one and it will 
 		 * return true if it makes it to halfway to the size of the test number.
 		 */
+		
 		for (BigInteger i = new BigInteger("3"); num.compareTo(i)>=0; i = i.add(two)){
 			if ((num.mod(i)).compareTo(zero)==0){System.out.println(i);return false;}
 			if (((num.add(one)).mod(two)).compareTo(i)==0){return true;}
