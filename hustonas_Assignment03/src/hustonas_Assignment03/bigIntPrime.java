@@ -21,7 +21,7 @@ public class bigIntPrime {
 		BigInteger two = new BigInteger("2");
 		BigInteger one = new BigInteger("1");
 		BigInteger zero = new BigInteger("0");
-		
+	
 		//Execptions
 		if (num.equals(one)){System.out.println("23");return false;}
 		if (num.equals(two)){System.out.println("24");return true;}
