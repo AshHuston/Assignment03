@@ -11,6 +11,8 @@ package bigIntPrime;
 
 import java.math.BigInteger;
 
+import bigIntPrime.bigIntPrime;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -22,7 +24,7 @@ public class Main {
 		
 		// Test method for expected answer, using predetermined values
 		// Expected answer is True
-		BigInteger value2 = new BigInteger("11");
+		BigInteger value2 = new BigInteger("899809363");
 		boolean test2 = bigIntPrime.isPrime(value2);
 		
 		// Test method for expected answer, using predetermined values

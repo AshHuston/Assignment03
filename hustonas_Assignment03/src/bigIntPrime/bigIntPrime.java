@@ -17,12 +17,12 @@ public class bigIntPrime {
 	 * @return returns true if the number is prime and false if the number is not prime.
 	 */
 	public static boolean isPrime(BigInteger num){
-		//Declare and istantiate objects to use with the method
+		//Declare and instantiate objects to use with the method
 		BigInteger two = new BigInteger("2");
 		BigInteger one = new BigInteger("1");
 		BigInteger zero = new BigInteger("0");
 	
-		//Execptions
+		//Exceptions
 		if (num.equals(one)){return false;}
 		if (num.equals(two)){return true;}
 		//Eliminates even numbers
