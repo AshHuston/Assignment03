@@ -1,6 +1,6 @@
 /***************************************
  * Name: Ash Huston
- * Assignment #: Assignment01
+ * Assignment #: Assignment 01
  * Course #, Section: Course 2045 Section 01
  * Due Date: 01/30/2018
  * Description: This method is used to determine if a number of type BigInteger is prime or not.
